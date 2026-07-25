@@ -14,6 +14,7 @@
 #include "EIBI.h"
 #include "Remote.h"
 #include "BleMode.h"
+#include "splash.h"
 
 // SI473/5 and UI
 #define MIN_ELAPSED_TIME         5  // 300
@@ -252,6 +253,15 @@ void setup()
   delay(50);
   rx.setVolume(volume);
   rx.setMaxSeekTime(SEEK_TIMEOUT);
+  
+  //------------------------ My Custom Code For splash  THMB -------------
+  // ---- Custom Splash Screen (addition) ----
+  spr.fillSprite(TH.bg);
+  spr.pushImage(0, 0, SPLASH_WIDTH, SPLASH_HEIGHT, splash_image);
+  spr.pushSprite(0, 0);
+  ledcWrite(PIN_LCD_BL, currentBrt);
+  delay(2000);
+  // ---- End custom splash ----
 
   // Draw display for the first time
   drawScreen();
