@@ -260,7 +260,7 @@ void setup()
   spr.pushImage(0, 0, SPLASH_WIDTH, SPLASH_HEIGHT, splash_image);
   spr.pushSprite(0, 0);
   ledcWrite(PIN_LCD_BL, currentBrt);
-  delay(2000);
+  delay(4000);
   // ---- End custom splash ----
 
   // Draw display for the first time
