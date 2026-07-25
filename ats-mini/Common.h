@@ -5,14 +5,14 @@
 #include <TFT_eSPI.h>
 #include <SI4735-fixed.h>
 
-#define RECEIVER_DESC  "ESP32-SI4732 Receiver"
-#define RECEIVER_NAME  "ATS-Mini"
+#define RECEIVER_DESC  "THMB-SI4732 Receiver"
+#define RECEIVER_NAME  "THMB-Radio"
 #define FIRMWARE_URL   "https://github.com/esp32-si4732/ats-mini"
 #define MANUAL_URL     "https://esp32-si4732.github.io/ats-mini/manual.html"
-#define AUTHORS_LINE1  "Authors: PU2CLR (Ricardo Caratti),"
-#define AUTHORS_LINE2  "Volos Projects, Ralph Xavier, Sunnygold,"
-#define AUTHORS_LINE3  "Goshante, G8PTN (Dave), R9UCL (Max Arnold),"
-#define AUTHORS_LINE4  "Marat Fayzullin"
+#define AUTHORS_LINE1  "ATS MINI Projects"
+#define AUTHORS_LINE2  "Powered By ESP32 & Si4732"
+#define AUTHORS_LINE3  " Authors: Reza Tahmasebi (THMB)"
+#define AUTHORS_LINE4  "Jul 21 2026"
 
 #define VER_APP        235  // Firmware version
 #define VER_SETTINGS   71   // Settings version
